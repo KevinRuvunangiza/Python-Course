@@ -5,14 +5,14 @@ default_password = 123
 def set_new_password():
     global default_password
     default_password = int(input("Enter a New Password [NUMBERS ONLY]: "))
-    print("Password updated!")
+    print("Password updated!\n")
 
 def test_password():
-    test = int(input("Enter password to test: "))
+    test = int(input("Enter password to Test: "))
     if test == default_password:
-        print("Password is Okay!")
+        print("Password is Okay!\n")
     else:
-        print("Password is Wrong!!!")
+        print("Password is Wrong!!!\n")
 
 while True:
     user_input = int(input(
@@ -31,4 +31,4 @@ while True:
     elif user_input == 4:
         break
     else:
-        print("Invalid option")
+        print("Invalid option\n")
